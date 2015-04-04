@@ -2,6 +2,14 @@
 ---
 * Stdout and stderr to file: `yourcommand &> /dev/file`
 
+#Shell expansion designators
+ * !! Spoken as bang-bang, this command refers to the most recent command. The exclamation point is often called bang on Linux and Unix systems.
+ * !n Refer to command n from the history. Use the history command to display these numbers. 
+ * !-n Refer to the current command minus n from the history.
+ * !string Refer to the most recent command starting with string.
+ * !?string Refer to the most recent command containing string.
+ * ^string1^string2 Quick substitution. Repeat the last command, replacing the first occurrence of string1 with string2.
+
 #Shell shortcuts
  * C-p Previous line (also up arrow)
  * C-n Next line (also down arrow)
@@ -18,6 +26,8 @@
  * M-d Delete (kill) word
  * C-rtext Reverse search for text
  * C-stext Forward search for text
+##
+
 
 #Libraries
 ---
