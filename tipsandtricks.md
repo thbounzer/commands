@@ -11,3 +11,11 @@
 
 ##generate a standard password (works with debian, needs testing with other distro) 
 * use this command: `perl -e 'print crypt("password","\$6\$saltsalt\$") . "\n"'` 
+
+##Propagate a system change to the kernel
+* `for i in `grep line /sys/devices/system/memory/*/state |grep offline|cut -f6 -d/` ; do echo online > /sys/devices/system/memory/$i/state $i;done`
+
+##See with wireshark a remote tcpdump using ssh:
+* Create a named pipe on your machine 
+* Start the remote tcpdump, write to local pipe: `ssh user@machine "tcpdump -s 0 -U -n -w - -i yourinterface not port 22" > /tmp/yourlocalnamedpipe`
+* Run wireshark: `wireshark -k -i /tmp/yourlocalnamedpipe`

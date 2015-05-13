@@ -38,7 +38,9 @@
 ---
 * Generation of pretty secure random password: `openssl rand -base64 32`
 
-
+#Named pipe
+---
+* Create a named pipe: mkfifo /tmp/nameofnamedpipe
 
 
 
