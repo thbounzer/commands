@@ -19,3 +19,6 @@
 * Create a named pipe on your machine 
 * Start the remote tcpdump, write to local pipe: `ssh user@machine "tcpdump -s 0 -U -n -w - -i yourinterface not port 22" > /tmp/yourlocalnamedpipe`
 * Run wireshark: `wireshark -k -i /tmp/yourlocalnamedpipe`
+
+## Delete found files with find:
+* execute: `find . -name something -exec rm -rf {} \;`
