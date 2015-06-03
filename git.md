@@ -6,4 +6,5 @@
 * Setting url of remote `git remote set-url remotename remoteuri`
 * Setting email `git config user.email emailadd@domain.tld`
 * Setting user `git config user.name username`
-* Pull a specific branch: `git pull -b branch_name remote_uri` 
+* Pull a specific branch: `git pull -b branch_name remote_uri`
+* Delete a wrong commited tag, f.e. tag1: `git tag -d tag1` and `git push origin :refs/tags/tag1`
