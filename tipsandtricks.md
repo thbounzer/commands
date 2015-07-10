@@ -25,3 +25,10 @@
 
 ## See every cron job for every user:
 * `for user in $(cut -f1 -d: /etc/passwd); do echo $user; crontab -u $user -l; done`
+
+## No more ssh timeouts:
+* Add this to your .ssh/config:
+```
+Host *
+  ServerAliveInterval 240
+```
