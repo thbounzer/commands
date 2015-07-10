@@ -32,3 +32,7 @@
 Host *
   ServerAliveInterval 240
 ```
+
+## Kill a expired not responding session:
+Host *
+* Enter ~ .
