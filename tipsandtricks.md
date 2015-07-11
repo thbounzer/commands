@@ -36,3 +36,26 @@ Host *
 ## Kill a expired not responding session:
 Host *
 * Enter ~ .
+
+## Netcatting
+`netcat -l 12345 > file.pdf` 
+or 
+`netcat -l -p 12345 > file.pdf`
+then, on the source pc 
+`netcat $MY_IP_ADDRESS 12345 < file.pdf`
+
+## Sound generation with sox
+Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain of -18
+`play "|sox -n -p synth 0.1 squ 4000 gain -18"`
+
+## Show crontable of every user 
+
+`for user in $(cut -f1 -d: /etc/passwd); do echo $user; crontab -u $user -l; done`
+
+## Multiple numbered-named file download with curl
+
+`curl -o 'file_#1.pdf' 'http://url.address.web/filesdir/filename_[00-28].pdf'`
+
+## Multiple pdf concatenation with ghostscript
+
+`gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf file1.pdf file2.pdf ..`
