@@ -48,9 +48,6 @@ then, on the source pc
 Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain of -18
 `play "|sox -n -p synth 0.1 squ 4000 gain -18"`
 
-## Show crontable of every user 
-
-`for user in $(cut -f1 -d: /etc/passwd); do echo $user; crontab -u $user -l; done`
 
 ## Multiple numbered-named file download with curl
 
