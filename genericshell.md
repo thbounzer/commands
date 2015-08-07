@@ -42,5 +42,6 @@
 ---
 * Create a named pipe: mkfifo /tmp/nameofnamedpipe
 
-
-
+#Tar over ssh
+---
+* `tar -cvzf - dirtotar | ssh user@server "cat > archivename.tgz"`
