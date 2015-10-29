@@ -53,6 +53,10 @@ Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain
 
 `curl -o 'file_#1.pdf' 'http://url.address.web/filesdir/filename_[00-28].pdf'`
 
+## Kvm use liveusb image to boot
+
+`kvm -usbdevice disk:/path/to/liveusb.img -boot menu=on`
+
 ## Multiple pdf concatenation with ghostscript
 
 `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf file1.pdf file2.pdf ..`
