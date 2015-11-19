@@ -60,3 +60,8 @@ Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain
 ## Multiple pdf concatenation with ghostscript
 
 `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf file1.pdf file2.pdf ..`
+
+## Top ten biggest dirs/files
+`du -hsx * | sort -rh | head -10`
+
+
