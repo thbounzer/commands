@@ -12,3 +12,6 @@
 * *postgres* list tables: '\dt';
 * *postgres* use dbase: '\c database';
 * *postgres* create user: 'CREATE USER user WITH PASSWORD 'password'';
+* *postgres* `GRANT { { CREATE | CONNECT | TEMPORARY | TEMP } [,...] | ALL [ PRIVILEGES ] }
+    ON DATABASE database_name [, ...]
+    TO { [ GROUP ] role_name | PUBLIC } [, ...] [ WITH GRANT OPTION ]`; 
