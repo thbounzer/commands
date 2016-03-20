@@ -22,4 +22,10 @@
 * restore: `psql dbname < infile`
 * grant: `GRANT { { CREATE | CONNECT | TEMPORARY | TEMP } [,...] | ALL [ PRIVILEGES ] }
     ON DATABASE database_name [, ...]
-    TO { [ GROUP ] role_name | PUBLIC } [, ...] [ WITH GRANT OPTION ]`; 
+    TO { [ GROUP ] role_name | PUBLIC } [, ...] [ WITH GRANT OPTION ]`;
+
+##sqlite
+---
+
+* list tables: `.tables`
+ 
