@@ -64,4 +64,8 @@ Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain
 ## Top ten biggest dirs/files
 `du -hsx * | sort -rh | head -10`
 
+## SCSI scanning for new disks
+`grep mpt /sys/class/scsi_host/host?/proc_name`
+and then, assuming that the grepped host is host0:
+`echo "- - -" > /sys/class/scsi_host/host0/scan`
 
