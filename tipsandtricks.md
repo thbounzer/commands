@@ -9,6 +9,9 @@
 		add Lock = Caps_Lock
 * then invoke the file with: `xmodmap file`
 
+##Exim cheatsheet
+* [http://bradthemad.org/tech/notes/exim_cheatsheet.php](exim cheatesheet)
+
 ##generate a standard password (works with debian, needs testing with other distro) 
 * use this command: `perl -e 'print crypt("password","\$6\$saltsalt\$") . "\n"'` 
 
