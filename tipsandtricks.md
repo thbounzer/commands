@@ -72,3 +72,15 @@ Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain
 and then, assuming that the grepped host is host0:
 `echo "- - -" > /sys/class/scsi_host/host0/scan`
 
+## Force swap to ram (WARNING: if there is not enough memory available, kernel will kill processes. use with caution)
+* Launch this command:`swapoff -a` then keep an eye on memory occupation (with htop for example) 
+* When swapoff has completed the transfer of swap to phy ram, enable swap again: `swapon -a`
+
+## Change swappiness
+* Swappiness controls how aggressive the kernel should use swap mem. 0=avoid swapping as much as possible, 100=use swapping as much as possible
+* Value stored in /proc/sys/vm/swappiness
+* Temp change: `sudo sysctl vm.swappiness=10`
+* Perm change(WARNING): `echo vm.swappiness=10 >> /etc/sysctl.conf`
+
+ 
+
