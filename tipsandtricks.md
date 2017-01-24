@@ -82,5 +82,5 @@ and then, assuming that the grepped host is host0:
 * Temp change: `sudo sysctl vm.swappiness=10`
 * Perm change(WARNING): `echo vm.swappiness=10 >> /etc/sysctl.conf`
 
- 
-
+## SSH SOCKS proxy throug a bastion host 
+`ssh -D 1337 -oProxyCommand="ssh -i ~/.ssh/keys/carlo_ossh user@bastionhost netcat -w 120 %h %p" user@destinationhost`
