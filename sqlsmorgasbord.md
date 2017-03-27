@@ -8,6 +8,8 @@
 * show permissions for user: `SHOW GRANTS FOR 'user'@'host';`
 * create user: `CREATE USER 'user'@'ipaddr' identified by 'passwd' password;`
 * user permission: `GRANT (PRIVS) ON (DBASE).* TO 'user'@'ipaddr`;
+* show databases: `SHOW DATABASES;`
+* show tables: `SHOW TABLES`;
 
 ##postgres
 ---
