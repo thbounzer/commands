@@ -1,7 +1,7 @@
-#SQL servers, queries, things, shit.
+# SQL servers, queries, things, shit.
 ---
 
-##mysql
+## mysql
 ---
 
 * mysql server show users: `SELECT User FROM mysql.user;`
@@ -11,7 +11,7 @@
 * show databases: `SHOW DATABASES;`
 * show tables: `SHOW TABLES`;
 
-##postgres
+## postgres
 ---
 
 * create database: `CREATE DATABASE name;';
@@ -26,7 +26,7 @@
     ON DATABASE database_name [, ...]
     TO { [ GROUP ] role_name | PUBLIC } [, ...] [ WITH GRANT OPTION ]`;
 
-##sqlite
+## sqlite
 ---
 
 * list tables: `.tables`

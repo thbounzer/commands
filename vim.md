@@ -1,4 +1,4 @@
-#Vim tips and others
+# Vim tips and others
 
 * set the tabspace: set tabstop=x set tabstop=n - set shiftwidth=n
 * delete until the file end `dG`

@@ -1,4 +1,4 @@
-#Tmux
+# Tmux
 ---
 
 * Zoom pane: `ctrl-b z`

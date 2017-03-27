@@ -1,8 +1,8 @@
-#Shell things
+# Shell things
 ---
 * Stdout and stderr to file: `yourcommand &> /dev/file`
 
-#Shell expansion designators
+# Shell expansion designators
  * !! Spoken as bang-bang, this command refers to the most recent command. The exclamation point is often called bang on Linux and Unix systems.
  * !n Refer to command n from the history. Use the history command to display these numbers. 
  * !-n Refer to the current command minus n from the history.
@@ -10,7 +10,7 @@
  * !?string Refer to the most recent command containing string.
  * ^string1^string2 Quick substitution. Repeat the last command, replacing the first occurrence of string1 with string2.
 
-#Shell shortcuts
+# Shell shortcuts
  * C-p Previous line (also up arrow)
  * C-n Next line (also down arrow)
  * C-b Back one character (also left arrow)
@@ -26,22 +26,21 @@
  * M-d Delete (kill) word
  * C-rtext Reverse search for text
  * C-stext Forward search for text
-##
 
 
-#Libraries
+# Libraries
 ---
 * Display shared libs required by *program*: `ldd program`
 * ld.so does not find a shared library, then boom. To update the cache index of shared libraries, use `ldconfig`
 
-#Password generation
+# Password generation
 ---
 * Generation of pretty secure random password: `openssl rand -base64 32`
 
-#Named pipe
+# Named pipe
 ---
 * Create a named pipe: mkfifo /tmp/nameofnamedpipe
 
-#Tar over ssh
+# Tar over ssh
 ---
 * `tar -cvzf - dirtotar | ssh user@server "cat > archivename.tgz"`
