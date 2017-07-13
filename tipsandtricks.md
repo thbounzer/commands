@@ -64,8 +64,11 @@ Generate a 4000 Hz square soundwave with a time length of 0.1 seconds and a gain
 
 `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf file1.pdf file2.pdf ..`
 
-## Top ten biggest dirs/files
+## Top ten biggest dirs
 `du -hsx * | sort -rh | head -10`
+
+## Top ten biggest files
+`find -type f -exec du -Sh {} + | sort -rh | head -n 10`
 
 ## SCSI scanning for new disks
 `grep mpt /sys/class/scsi_host/host?/proc_name`
@@ -84,3 +87,6 @@ and then, assuming that the grepped host is host0:
 
 ## SSH SOCKS proxy throug a bastion host 
 `ssh -D 1337 -oProxyCommand="ssh -i ~/.ssh/keys/carlo_ossh user@bastionhost netcat -w 120 %h %p" user@destinationhost`
+
+
+
