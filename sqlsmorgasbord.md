@@ -10,6 +10,9 @@
 * user permission: `GRANT (PRIVS) ON (DBASE).* TO 'user'@'ipaddr`;
 * show databases: `SHOW DATABASES;`
 * show tables: `SHOW TABLES`;
+* engine stats: `SHOW ENGINE INNODB STATUS`;
+* show stored procedure list: `SHOW PROCEDURE STATUS`;
+* show stored procedure: `SHOW CREATE PROCEDURE procedurename;`
 
 ## postgres
 ---
