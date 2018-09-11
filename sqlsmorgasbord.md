@@ -29,6 +29,12 @@
     ON DATABASE database_name [, ...]
     TO { [ GROUP ] role_name | PUBLIC } [, ...] [ WITH GRANT OPTION ]`;
 
+* grant read only to a user on a database: 
+    `GRANT CONNECT ON DATABASE mydb TO xxx;
+    -- This assumes you're actually connected to mydb..
+    GRANT USAGE ON SCHEMA public TO xxx;
+    GRANT SELECT ON mytable TO xxx;`
+
 ## sqlite
 ---
 
