@@ -88,5 +88,5 @@ and then, assuming that the grepped host is host0:
 ## SSH SOCKS proxy throug a bastion host 
 `ssh -D 1337 -oProxyCommand="ssh -i ~/.ssh/keys/carlo_ossh user@bastionhost netcat -w 120 %h %p" user@destinationhost`
 
-
-
+## Get the serial number and product number of a PHY server
+`dmidecode -s system-serial-number/system-product-name`
