@@ -90,3 +90,6 @@ and then, assuming that the grepped host is host0:
 
 ## Get the serial number and product number of a PHY server
 `dmidecode -s system-serial-number/system-product-name`
+
+## Re-enroll a client in freeipa (maybe you reprovisioned a VM, same name?)
+`ipa-client-install --force-join`
